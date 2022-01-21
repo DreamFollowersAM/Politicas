@@ -72,7 +72,20 @@ body{
     transition: all .3s linear;
 }
 
-.btnclr:hover{
+.btnclr2{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background:var(--gradient);
+    font-size: 15px;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.btnclr:hover, .btnclr2:hover{
     transform: scale(1.1);
     color:#fff;
 }
@@ -148,6 +161,12 @@ p{
 .card{
     max-width: 250px;
     max-height: 350px;
+    min-width: 200px;
+    min-height: 350px;
+}
+
+.txtt{
+    min-height: 30vh;
 }
 
 h4{
