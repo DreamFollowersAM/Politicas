@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DreamSchool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navi navbar navbar-expand-lg navbar-dark fixed-top m-0">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">DreamSchool</a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#courses">Planes</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorias
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Ensambles de computadoras</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Programacion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Mantenimiento de equipo</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Diseño 3D</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Produccion audiovisual</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Icons -->
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.instagram.com/armanxddo.mf/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://twitter.com/armanxddo"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <section class="home2 hdr" id="home">
+      <h4 class="text-center">ACUERDO <span>LEGAL</span></h4>
+
+      <p class="text-justify">
+        Le informamos que es importante y obligatorio que, en su carácter de
+        Usuario y/o Visitante, lea, entienda y acepte de manera total el
+        contenido de este documento, dicho consentimiento se considera como
+        otorgado a favor de la empresa de servicios educativos.
+      </p>
+      <p class="text-justify">
+        Al consultar, registrarse, solicitar y usar los servicios implica la
+        adhesión a estos Términos y Condiciones de Uso y del Servicio.
+      </p>
+      <p class="text-justify">
+        La importancia de que el Usuario conozca el contenido de estos términos
+        y condiciones radica en que estos disponen las reglas establecidas, así
+        como los derechos y obligaciones que tiene el Usuario como consumidor,
+        salvo las excepciones previstas en diversas cláusulas.
+      </p>
+      <p class="text-justify">
+        El marco jurídico que en los Estados Unidos Mexicanos protege los
+        derechos y obligaciones tanto de la empresa como del Usuario se rigen
+        por la legislación mexicana, específicamente la Ley Federal del
+        Protección al Consumidor, el Código de Comercio, el Código Civil
+        Federal, el Código Federal de Procedimientos Civiles y la Norma Mexicana
+        -NMX-COE-001-SCFI-2018, Comercio Electrónico - Disposiciones a las que
+        se sujetarán aquellas personas que ofrezcan, comercialicen o vendan
+        bienes, productos o servicios-, la legislación mexicana señalada en su
+        conjunto reglamenta el uso de servicios en línea para establecer tanto
+        disposiciones normativas como sanciones en caso de que se realice la
+        violación a los derechos de los consumidores en línea, por lo cual si
+        usted considera que sus derechos como Usuario no están siendo protegidos
+        bajo dicho marco legal, deberá conciliar inicialmente las quejas y
+        reclamaciones del SERVICIO con la empresa utilizando los medios que
+        indican en estos términos y condiciones y, en caso de no obtener una
+        respuesta satisfactoria, el Usuario puede utilizar los mecanismos
+        establecidos en la Ley ante la Procuraduría Federal del Consumidor.
+      </p>
+      <p class="text-justify font-weight-bold">
+        Si El Usuario no está de acuerdo, le solicitamos abstenerse de realizar
+        cualquier tipo de uso de los servicios y/o contenidos y/o provistos en
+        LA PLATAFORMA.
+      </p>
+
+      <h5 class="text-center">CLÁUSULA A. IDENTIFICACIÓN DEL PRESTADOR DEL SERVICIO</h5>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Razón social</th>
+            <td>DreamSchool, S.A.P.I. de C.V.</td>
+          </tr>
+          <tr>
+            <th scope="row">Nombre comercial</th>
+            <td>DreamSchool</td>
+          </tr>
+          <tr>
+            <th scope="row">RFC</th>
+            <td>GMX1715365242</td>
+          </tr>
+          <tr>
+            <th scope="row">Sitio web</th>
+            <td>www.DreamSchool.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Giro</th>
+            <td>Servicios Educativos</td>
+          </tr>
+          <tr>
+            <th scope="row">Teléfono</th>
+            <td>4771236548</td>
+          </tr>
+          <tr>
+            <th scope="row">Domicilio</th>
+            <td>Luis Gonzales #301, Nuevo Laredo</td>
+          </tr>
+          <tr>
+            <th scope="row">Geolocalización</th>
+            <td>León, Gto.</td>
+          </tr>
+          <tr>
+            <th scope="row">Contacto</th>
+            <td>Correo electrónico: DreamSchool@dream.com
+              Facebook Messenger: #DreamSchoolOficial
+              WhatsApp: 4771236548
+              Chat en línea
+              </td>
+          </tr>
+          <tr>
+            <th scope="row">Horario de atención</th>
+            <td>Lunes a viernes de 8-20h
+              sábado y domingo de 10-14h
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h5 class="text-center">CLÁUSULA B. CONDICIONES GENERALES</h5>
+      <p class="text-justify font-weight-bold">a. Capacidad legal para la contratación del servicio</p>
+      <p class="text-justify">Previo a realizar cualquier uso en el LA PLATAFORMA, el Usuario declara bajo protesta de decir verdad que tiene cumplidos al menos 18 años. Si aún no cuenta con esa edad, el Usuario deberá realizar el registro a través de su madre, padre o tutor, entendiéndose que este será responsable de las actividades realizadas en LA PLATAFORMA web.</p>
+      <p class="text-justify">Cualquier uso o acceso realizado por personas menores de 13 años con o sin consentimiento de su madre, padre o tutor queda limitado a no ser sujeto de derechos, por lo cual en caso de que la empresa </p>
+      <p class="text-justify">identifique que el Usuario es menor a esa edad cancelará en forma inmediata la cuenta de usuario y anulará cualquier documento emitido, como Constancias o Diplomas obtenidos de nuestros Cursos.</p>
+      <p class="text-justify">En caso de no ser mayor de edad ni contar con la autorización de madre, padre o tutor, cualquier acción realizada en LA PLATAFORMA carece de validez legal y, por ende, la empresa se reserva el derecho de anular operaciones realizadas y ejercer todos sus derechos en contra de la persona no autorizada bajo los términos previstos en la legislación mexicana.</p>
+
+      <p class="text-justify font-weight-bold">b. Descripción del servicio y sus contenidos</p>
+      <p class="text-justify">El servicio</p>
+      <p class="text-justify">Ofrecemos una plataforma educativa a través de la cual se ofrecen diversos servicios, disponibles para los Usuarios con un Plan de Suscripción Activo, los cuales se enlistan a continuación:</p>
+      <ul>
+        <li><p class="text-justify">I. Capacitación a través de cursos individuales cuyo formato puede ser online en el sitio web o con contenido descargado en la aplicación móvil</p></li>
+        <li><p class="text-justify">II. Capacitación en líneas de especialización de competencias en ramas específicas, principalmente tecnológicas</p></li>
+        <li><p class="text-justify">III. Lectura y descarga de material educativo de apoyo para los cursos y líneas de especialización</p></li>
+        <li><p class="text-justify">IV. Habilitación de foros de discusión y chats en línea para la participación e interacción del Usuario con otros estudiantes de la comunidad de la empresa</p></li>
+        <li><p class="text-justify">V. Generar constancia o diploma de finalización de los cursos y/o líneas de especialización ofrecidos</p></li>
+      </ul>
+      <p class="text-justify">Los servicios que se indican pueden ser modificados o retirados por la empresa en cualquier momento, siempre con el fin de mejorar nuestra oferta de servicios a nuestros estudiantes.</p>
+      <p class="text-justify">Contenido</p>
+      <p class="text-justify">El contenido que ofrece en sus cursos y líneas de especialización es generado por expertos en la industria, cada uno en su ramo, a través del cual se transmite conocimiento práctico al Usuario.</p>
+      <p class="text-justify">La empresa junto con su equipo de trabajo realiza todos los esfuerzos necesarios para ofrecer contenido actualizado en LA PLATAFORMA, sin embargo, estamos sujetos a la disponibilidad de tiempo de nuestros expertos para realizar dicho proceso, bajo este entendido es probable que algunos cursos presenten contenido que aún no haya sido actualizado.</p>
+      <p class="text-justify">¿Lo que no somos?</p>
+      <p class="text-justify">La capacitación ofrecida en la empresa no implica</p>
+      <ul><li><p class="text-justify">•	La impartición de cursos escolarizados con validez oficial en México ante la secretaria de Educación Pública o cualquier otra Institución que tenga la autorización oficial para otorgar reconocimientos con validez oficial ni la obtención de un título profesional o grado académico con Reconocimiento de Validez Oficial de Estudios en México (RVOE)</p></li></ul>
+      <p class="text-justify font-weight-bold">c. Descripción de tipo de suscripciones</p>
+      <p class="text-justify">Se ofrecen distintos planes de suscripción, cada uno de ellos proporciona al Usuario servicios diferentes en LA PLATAFORMA.</p>
+      <p class="text-justify">Las características que tienen las suscripciones son distintas conforme al plan contratado por el Usuario, en términos generales, LA PLATAFORMA ofrece lo siguientes servicios:</p>
+      <ul>
+        <li><p class="text-justify">Acceso a todos los cursos contenidos en LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Acceso anticipado, 48 horas antes del lanzamiento, a cursos nuevos.</p></li>
+        <li><p class="text-justify">Clases en Full HD.</p></li>
+        <li><p class="text-justify">App para iOS y Android con funciones exclusivas y cursos en audio.</p></li>
+        <li><p class="text-justify">Descarga de contenidos desde la aplicación móvil para estudiar sin conexión.</p></li>
+        <li><p class="text-justify">Emisión de Diploma de certificación en formato digital de las Escuelas y cursos aprobados.</p></li>
+        <li><p class="text-justify">Envío de Diploma de certificación en formato impreso de las Escuelas aprobadas.</p></li>
+        <li><p class="text-justify">Pago por Paypal® hasta en 12 meses sin intereses.</p></li>
+        <li><p class="text-justify">Pago con depósito bancario y otros métodos.</p></li>
+        <li><p class="text-justify">Precio de la suscripción sin incrementos durante su año de vigencia.</p></li>
+      </ul>
+      <p class="text-justify">El detalle de qué características tiene cada una de las suscripciones está disponible para su consulta en https://dreamschool.com/cursos/, es importante que el Usuario revise constantemente la descripción de los planes que dicha empresa ofrece para conocer cambios y nuevos beneficios.</p>
+      
+
+      <h5 class="text-center">CLÁUSULA C. REGLAS DE CONTRATACIÓN EN LA PLATAFORMA</h5>
+      <p class="text-justify font-weight-bold">a. ALTA DE CUENTA DE USUARIO</p>
+      <p class="text-justify">Para determinados servicios como inscribirse a cursos o interactuar con otros Usuarios, es necesaria la creación de un perfil de Usuario, para ello deberá realizar el siguiente procedimiento:</p>
+      <ul>
+        <li><p class="text-justify">Indicar Nombre completo y una dirección de correo electrónico en la sección Iniciar sesión.</p></li>
+        <li><p class="text-justify">Confirmar la cuenta de correo electrónico señalada dando clic al enlace de validación que le enviaremos vía email.</p></li>
+        <li><p class="text-justify">Una vez confirmado, el usuario podrá ingresar su cuenta y contraseña para su ingreso.</p></li>
+      </ul>
+      <p class="text-justify">Si el usuario continúa con el proceso autenticándose con la asignación de un Usuario y contraseña</p>
+      <ul>
+        <li><p class="text-justify">Indicar Nombre de Usuario y/o correo electrónico.</p></li>
+        <li><p class="text-justify">Indicar Contraseña.</p></li>
+      </ul>
+      <p class="text-justify">Una vez que DreamSchool haya realizado satisfactoriamente el proceso de registro le brindará acceso automático al Usuario a LA PLATAFORMA en modalidad de suscripción tipo Free.</p>
+      <p class="text-justify">Es importante que cuide el uso de sus datos de autenticación para acceder a LA PLATAFORMA, como son su Usuario, correo electrónico y contraseña que asigne al realizar su procedimiento de alta, así como las actualizaciones y/o modificaciones posteriores a dichos datos debido a que estos se reconocen en la legislación mexicana como una firma electrónica, por lo cual toda acción realizada en LA PLATAFORMA, le serán atribuidas a la persona relacionada con el Usuario registrado.</p>
+      <p class="text-justify">Si comparte sus datos o credenciales para que otra persona inicie sesión en su perfil de Usuario, acepta que asumirá toda la responsabilidad de cualquier actividad que sea realizada en su cuenta. </p>
+      <p class="text-justify font-weight-bold">b. PROCESO DE COMPRA</p>
+      <p class="text-justify">Compra.</p>
+      <p class="text-justify">La creación de la cuenta de Usuario permite consultar la lista de cursos que se ofrecen a través de LA PLATAFORMA, para que el Usuario esté en condiciones de acceder a algunos de los contenidos de LOS SERVICIOS que se ofrecen debe formalizar el proceso de suscripción a alguno de los perfiles de pago que se ofrecen.</p>
+      <p class="text-justify">Dentro del proceso de compra, en el Apartado “Mi Suscripción” se exhibe al Usuario los tipos de plan de suscripción disponibles, así como las características específicas de cada uno de ellos, el monto total a pagar dependiendo la suscripción y su desglose previo a la formalización de la compra.</p>
+      <p class="text-justify">Una vez confirmado por el Usuario el plan de suscripción que contratará, se le proporcionan las opciones actuales que DreamSchool ofrece para realizar el pago del servicio elegido.</p>
+      <p class="text-justify">Precios de la suscripción</p>
+      <p class="text-justify">Los precios que se indican en LA PLATAFORMA están expresados en pesos mexicanos e incluyen el Impuesto al Valor Agregado (IVA), en caso de que el Usuario no solicite su comprobante fiscal, el costo no tendrá disminución alguna en su monto total.</p>
+      <p class="text-justify">Los precios están sujetos a cambio sin previo aviso (a la alta o baja), en caso de que el precio por suscripción se reduzca las suscripciones previamente formalizadas con su pago se mantendrán en la misma cantidad y no quedan sujetas a devolución alguna a favor del usuario.</p>
+      <p class="text-justify">Pago.</p>
+      <p class="text-justify">Compra</p>
+      <p class="text-justify">Métodos de pago</p>
+      <p class="text-justify">DreamSchool pone a su disposición los siguientes métodos de pago:</p>
+      <p class="text-justify">DreamSchool se deslinda de cualquier controversia que surja entre El Usuario y el Proveedor de Pago que haya seleccionado. El Usuario queda sujeto a las condiciones contractuales, transaccionales y de seguridad informática establecidas por cada uno de estos proveedores:</p>
+      <ul>
+        <li><p class="text-justify">PayPal.</p></li>
+        <li><p class="text-justify">Banorte.</p></li>
+        <li><p class="text-justify">Oxxo Pay.</p></li>
+        <li><p class="text-justify">Pago con Bitcoin.</p></li>
+      </ul>
+      <p class="text-justify">Formalización de pago y activación de la cuenta</p>
+      <p class="text-justify">El plazo de activación de la suscripción varía en función de la forma de pago utilizada:</p>
+      <ul>
+        <li><p class="text-justify">Cuando el Usuario realiza su pago con cargo a su tarjeta de crédito o PayPal®, su servicio es activado de inmediato en forma posterior a recibir la confirmación de pago.</p></li>
+        <li><p class="text-justify">Si el Usuario opta por pagar mediante depósito bancario, deberá enviar al correo electrónico team@DreamSchool.com o a cualquiera de los medios de contacto establecidos en el apartado de Identificación, el comprobante de pago realizado para que DreamSchool realice la validación en sus registros y proceda a la activación de los servicios contratados. DreamSchool realiza la validación de sus registros bancarios en los días 1 y 15 de cada mes, por lo que, si El Usuario realiza el pago durante días intermedios a ellos, deberá esperar al día natural siguiente a los señalados para que su suscripción sea activada.</p></li>
+        <li><p class="text-justify">Cuando el Usuario realiza su pago a través de Oxxo o Bitcoins deberá enviar al correo team@DreamSchool.com o a cualquiera de los medios de contacto establecidos en el apartado de Identificación, el comprobante de pago realizado para que DreamSchool realice la validación en sus registros y proceda a la activación de los servicios contratados, una vez confirmado el servicio será activado en un plazo no mayor a 48 horas.</p></li>
+      </ul>
+      <p class="text-justify">En cualquiera de los casos anteriores, cuando DreamSchool realice la comprobación del pago, remitirá un correo electrónico de confirmación al correo electrónico proporcionado por el Usuario al momento de su registro. Aunado a lo anterior, en su cuenta de perfil, el Usuario encontrará el comprobante de pago correspondiente, mismo que podrá consultar y descargar las veces que sea necesario.</p>
+      <p class="text-justify">Facturación</p>
+      <p class="text-justify">En caso de requerir la emisión de un comprobante fiscal, el Usuario deberá enviar al correo team@DreamSchool.com, o a cualquiera de los medios de contacto establecidos en el apartado de Identificación, su solicitud indicando nombre completo o razón social, su Registro Federal de Contribuyentes (RFC), correo electrónico y comprobante de su pago. La información de facturación que proporcione deberá ser exacta y completa a efecto de emitir correctamente su comprobante fiscal, de lo contrario, no podrá emitirse nuevamente una factura por el mismo pedido. Su comprobante fiscal será emitido en un plazo máximo de 30 días naturales y será enviado vía correo electrónico a la dirección electrónica que El Usuario indique. En caso de cancelación o devolución de su compra, el comprobante fiscal emitido será cancelado inmediatamente.</p>
+      <p class="text-justify">Actualización de precios</p>
+      <p class="text-justify">DreamSchool se reserva el derecho de realizar la actualización en los precios de los planes de suscripción que ofrece sin necesidad de dar previo aviso al Usuario, el Usuario se compromete a revisar periódicamente los precios vigentes los cuales se exhiben públicamente en LA PLATAFORMA dentro de la sección correspondiente a Suscripciones.</p>
+      <p class="text-justify">Durante la vigencia de su suscripción esta no se verá afectada por las actualizaciones al precio de la suscripción, cuando sea aplicable la renovación de su suscripción, el Usuario deberá pagar el nuevo monto señalado en caso de que éste haya sido actualizado.</p>
+      <p class="text-justify font-italic">a. Cancelación del pago automático de la suscripción</p>
+      <p class="text-justify">La cancelación de la cuenta tiene como finalidad que el Usuario solicite la no renovación automática de su suscripción, eliminando el cargo automático a su tarjeta de crédito o la aplicación del cargo recurrente vía Paypal®.</p>
+      <p class="text-justify">Para solicitar esta cancelación requerimos que el Usuario remita en un plazo máximo de quince (15) días naturales antes de la finalización de su suscripción vigente, un escrito libre al correo electrónico team@DreamSchool.com con el asunto “Solicitud de cancelación”. Una vez recibida la solicitud, DreamSchool realizará la cancelación en veinticuatro (24) horas contadas a partir del día en el que recibió la solicitud, la cancelación efectiva será comunicada vía correo electrónico a la dirección registrada como Usuario en LA PLATAFORMA.</p>
+      <p class="text-justify">La cancelación de la cuenta no implica que DreamSchool realizará la devolución de cualquier tipo de parcialidad al Usuario.</p>
+      <p class="text-justify font-italic">b. Reembolso</p>
+      <p class="text-justify">Para solicitar el reembolso de su pago requerimos que el Usuario envíe un escrito libre al correo electrónico team@DreamSchool.com con el asunto “Solicitud de Reembolso”, indicando como mínimo su nombre completo, monto pagado y descripción detallada de su solicitud, en un plazo que no deberá exceder los cinco (5) días naturales después de que haya sucedido alguna de las siguientes situaciones:</p>
+      <ul>
+        <li><p class="text-justify">Pagos dobles realizados por errores involuntarios del Usuario.</p></li>
+        <li><p class="text-justify">Error en la contratación de alguno de los planes.</p></li>
+      </ul>
+      <p class="text-justify">Una vez recibida su solicitud, el equipo de DreamSchool realizará la evaluación de la información enviada, la cual será informada al Usuario en un plazo no mayor a quince (15) días naturales posteriores a la recepción de la solicitud y en caso de ser procedente se solicitará información para llevar a cabo el reembolso (cuenta bancaria y número CLABE). La decisión final será remitida vía correo electrónico al Usuario.</p>
+      <p class="text-justify">DreamSchool tiene la facultad de solicitar al Usuario los documentos necesarios para verificar su identidad previamente a realizar el reembolso.</p>
+      <p class="text-justify">Solo por los motivos señalados DreamSchool realizará el reembolso del pago realizado por suscripción a LA PLATAFORMA.</p>
+
+
+      <h5 class="text-center">CLÁUSULA D. OBLIGACIONES DE DREAMSCHOOL</h5>
+      <p class="text-justify">Para brindarle un mejor servicio DreamSchool se compromete a brindar un servicio de calidad, en apego a las siguientes condiciones, así como a las demás establecidas en estos Términos y Condiciones:</p>
+      <ul>
+        <li><p class="text-justify">Mantener un contenido actualizado y fehaciente de los servicios que se ofrecen en LA PLATAFORMA e informar oportunamente al Usuario de cualquier cambio al alcance de los Servicios, Términos y Condiciones y/o Aviso de Privacidad, a través de los medios habilitados para tal efecto y señalados en diversos apartados.</p></li>
+        <li><p class="text-justify">En caso de que haya solicitado un reembolso o la cancelación de los servicios, dar seguimiento oportuno a su solicitud de devolución de pago, informarle la procedencia y tiempos de devolución, así como a justificar los motivos por los cuales no llegase a proceder.</p></li>
+        <li><p class="text-justify">Otorgar comprobantes de pago, y en su caso, comprobantes fiscales por los servicios que sean contratados a través de LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Dar cabal cumplimiento a nuestras obligaciones en materia de protección de datos personales.</p></li>
+        <li><p class="text-justify">Estar disponible para proveer soporte técnico (atención a clientes) con respecto a LOS SERVICIOS en caso de existir una situación particular con los usuarios de LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Exhibir el monto total a pagar (con impuestos incluidos) por los servicios ofrecidos en LA PLATAFORMA</p></li>
+      </ul>
+
+      <h5 class="text-center">CLÁUSULA E. OBLIGACIONES DEL USUARIO</h5>
+      <p class="text-justify">Para hacer un uso eficiente de nuestros servicios y evitar la cancelación de su acceso a LA PLATAFORMA, el Usuario se obliga a:</p>
+      <ul>
+        <li><p class="text-justify">Crear una cuenta de usuario haciendo uso de su identidad real proporcionando información verídica, precisa y actualizada.</p></li>
+        <li><p class="text-justify">Utilizar su cuenta de usuario en forma responsable, ya que ésta es de carácter personal, única e intransferible. Todas las acciones realizadas con la cuenta del Usuario le serán atribuibles a éste.</p></li>
+        <li><p class="text-justify">Contar con capacidad natural y jurídica para obligarse a las disposiciones contenidas en estos términos y condiciones, considerando principalmente ser mayor de edad, no tener una suspensión de derechos dictada por alguna autoridad judicial y estar en condiciones mentales suficientes que le permitan entender el alcance del contenido de este documento.</p></li>
+        <li><p class="text-justify">Antes de realizar el pago de los servicios, verificar que los servicios y cantidades seleccionados, sean correctos y completos.</p></li>
+        <li><p class="text-justify">Verificar la fecha de vencimiento de los servicios contratados y atender los recordatorios de renovación de servicios en tiempo y forma, en caso de solicitar la cancelación del servicio se compromete a realizar el proceso indicado en la sección denominada “Cancelación”.</p></li>
+        <li><p class="text-justify">Descargar y utilizar el material de apoyo y/o documentos que se encuentran en LA PLATAFORMA únicamente para uso personal y actividades sin fines de lucro.</p></li>
+        <li><p class="text-justify">Solicitar su comprobante fiscal dentro del mes en que fue realizada la compra.</p></li>
+        <li><p class="text-justify">Ser el único responsable de cualquier daño o perjuicio ocasionado a terceros y/o a DreamSchool consecuencia del uso indebido del contenido y/o de LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Cumplir con las demás condiciones establecidas en este documento.</p></li>
+      </ul>
+
+      <h5 class="text-center">CLÁUSULA F. USOS PERMITIDOS Y LIMITACIONES DE USO DE LA PLATAFORMA</h5>
+      <p class="text-justify">Para realizar la suscripción a LA PLATAFORMA y hacer uso del contenido que se ofrecen a través de DreamSchool es necesario que conozca los usos permitidos y no permitidos, los cuales, de manera enunciativa más no limitativa, se indican a continuación:</p>
+      <p class="text-justify font-italic">a. Usos Permitidos</p>
+      <ul>
+        <li><p class="text-justify">Consultar el catálogo de servicios que se ofrecen a través de LA PLATAFORMA 365/24/7.</p></li>
+        <li><p class="text-justify">Realizar la suscripción a los planes ofrecidos en LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Solicitar comprobantes de compra y/o facturación a través de los medios señalados.</p></li>
+        <li><p class="text-justify">Consultar y editar su perfil en forma ilimitada.</p></li>
+        <li><p class="text-justify">Consultar y descargar, reproducir o compartir el material al que tiene acceso derivado de los derechos que su suscripción le da, siempre y cuando sea realizado con fines no lucrativos.</p></li>
+        <li><p class="text-justify">Hacer mención o publicación en redes sociales o cualquier otro medio de carácter no comercial sobre los servicios que ofrecemos en LA PLATAFORMA.</p></li>
+      </ul>
+      <p class="text-justify font-italic">b. Usos No Permitidos</p>
+      <ul>
+        <li><p class="text-justify">Al realizar alguna actividad de evaluación, solicitar que alguien más lo realice en su nombre o utilizar respuestas que le hayan sido compartidas por otros Usuarios.</p></li>
+        <li><p class="text-justify">Acceder a bases de datos o cualquier medio electrónico en donde almacenamos información de carácter privado.</p></li>
+        <li><p class="text-justify">Copiar, distribuir, descargar, mostrar o transmitir cualquier tipo de contenido de este sitio en cualquier forma o a través de cualquier medio ya sean medios electrónicos, mecánicos, electromecánicos, ópticos, audiovisuales, sonoros o cualquier otro medio superviniente sin autorización de DreamSchool.</p></li>
+        <li><p class="text-justify">Dar de alta cuentas de usuario con información falsa o con datos personales de los cuales no es el titular.</p></li>
+        <li><p class="text-justify">Utilizar nombres de usuario obscenos, falsos o inmorales.</p></li>
+        <li><p class="text-justify">Realizar abuso, acoso, amenazas o cualquier acción que atente contra otros Usuarios de LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Publicar, compartir o transmitir contenido de cualquier tipo que sea abusivo, ofensivo, obsceno, difamatorio, o que infrinja el derecho a la imagen de terceros.</p></li>
+        <li><p class="text-justify">Publicar, compartir y/o transmitir contenido que infrinja derechos de autor o derechos de propiedad industrial de terceros.</p></li>
+        <li><p class="text-justify">Vender o transferir su Cuenta de Usuario.</p></li>
+        <li><p class="text-justify">Enviar correos electrónicos con asuntos que no estén relacionados con LA PLATAFORMA o con atención al cliente.</p></li>
+        <li><p class="text-justify">Obtener información de otros usuarios con fines ajenos a los previstos en LA PLATAFORMA.</p></li>
+        <li><p class="text-justify">Utilizar contenidos de LA PLATAFORMA para revender servicios de capacitación o cualquier otro tipo de servicio.</p></li>
+        <li><p class="text-justify">Utilizar los formularios de LA PLATAFORMA para el envío de códigos informáticos o scripts (instrucciones informáticas) que llegasen a afectar el correcto funcionamiento del sitio.</p></li>
+        <li><p class="text-justify">Hacer cualquier uso contrario dentro de LA PLATAFORMA conforme a lo establecido en los presentes Términos y Condiciones.</p></li>
+      </ul>
+      <p class="text-justify">La realización de cualquiera de las actividades no permitidas traerá como consecuencia la cancelación inmediata de la suscripción en LA PLATAFORMA y en caso de que la acción realizada esté vinculada con alguna actividad ilegal, se le dará parte de dicha situación a las autoridades correspondientes.</p>
+      <p class="text-justify">El Usuario será responsable de los daños y perjuicios que ocasione a DreamSchool o a terceros, por:</p>
+      <ul>
+        <li><p class="text-justify">Cualquier acto realizado con dolo o mala fe que afecte tanto en aspectos morales como económicos a cualquier persona física o persona moral que provoque que sean instauradas acciones legales en contra de DreamSchool y/o de sus socios.</p></li>
+        <li><p class="text-justify">La subutilización de los contenidos para replicar servicios de capacitación a terceros como consecuencia de la intención de obtener un lucro.</p></li>
+        <li><p class="text-justify">Realizar el registro de los contenidos de LA PLATAFORMA a su nombre o a nombre de terceros.</p></li>
+        <li><p class="text-justify">El uso indebido de LA PLATAFORMA aun y cuando ello no conlleve el daño a terceros.</p></li>
+        <li><p class="text-justify">Incumplimiento a estos Términos y Condiciones.</p></li>
+      </ul>
+      <p class="text-justify font-italic">c. Suspensión de la cuenta por infringir los Términos y Condiciones del servicio</p>
+      <p class="text-justify">DreamSchool suspenderá la cuenta del Usuario si detecta que se ha realizado una violación a cualquiera de las disposiciones contenidas en estos Términos y Condiciones por un plazo de 30 días. Adicionalmente a los Usos señalados como no permitidos en el inciso anterior, se consideran causales de suspensión de LOS SERVICIOS, en forma enunciativa más no limitativa, las siguientes situaciones:</p>
+      <ul>
+        <li><p class="text-justify">Si se detecta que el Usuario ha proporcionado: datos falsos, datos que no refieren a su identidad, información de terceros en su nombre o ha realizado usurpación de identidad.</p></li>
+        <li><p class="text-justify">Si se detecta que el Usuario publica contenido no permitido o viola temas relacionados con protección de datos personales o propiedad intelectual.</p></li>
+        <li><p class="text-justify">Si se detecta el registro de varias cuentas a nombre de un mismo Usuario.</p></li>
+        <li><p class="text-justify">Si el Usuario remite correos electrónicos con contenido obscenos, difamatorio, agresivo o utiliza un lenguaje inapropiado en las solicitudes que envíe a team@dreamschool.com</p></li>
+        <li><p class="text-justify">Cualquier otra acción que viole cualquier norma jurídica nacional y/o internacional.</p></li>
+      </ul>
+      <p class="text-justify">Si el Usuario identifica que su cuenta ha sido suspendida, deberá enviar desde la misma dirección electrónica utilizada para registrarse como usuario, un correo electrónico a team@dreamschool.com con el asunto: “Cuenta suspendida” a efecto de que le sea informado el motivo de suspensión y conocer, en caso de que sea procedente, cuál es el proceso para realizar la reactivación de su cuenta.</p>
+      <p class="text-justify">El tiempo que dure suspendida la cuenta del Usuario por las condiciones establecidas en esta cláusula no será repuesto dentro de la vigencia de la suscripción del usuario salvo en los casos en que la suspensión sea consecuencia de un error por parte de DreamSchool.</p>
+
+      <h5 class="text-center">CLÁUSULA G. RESPECTO A LA SEGURIDAD INFORMÁTICA</h5>
+      <p class="text-justify">En cumplimiento a las previsiones legales establecidas en la Ley Federal del Protección al Consumidor, el Código de Comercio, el Código Civil Federal, el Código Federal de Procedimientos Civiles y la Norma Mexicana NMX-COE-001-SCFI-2018, Comercio Electrónico - Disposiciones a las que se sujetarán aquellas personas que ofrezcan, comercialicen o vendan bienes, productos o servicios, y la Ley Federal de Protección de Datos Personales en Posesión de los Particulares así como su regulación secundaria, LA PLATAFORMA tiene incorporadas medidas de seguridad informática orientadas a proteger la información que comparte en sus formularios, foros, chats en línea, interacción en los cursos así como en el proceso de compra que el Usuario realiza.</p>
+      <p class="text-justify">Aun así, como consecuencia de la innovación tecnológica, no se garantiza que el contenido de este sitio y/o los enlaces a sitios web de terceros estén libres de interrupciones, errores, virus o cualquier otro componente nocivo.</p>
+      <p class="text-justify">El Usuario desde el momento de aceptación de estos Términos y Condiciones de Uso y del Servicio está de acuerdo en que DreamSchool no es responsable directo ni indirecto de cualquier daño o perjuicio material o de carácter informático que puedan sufrir los dispositivos electrónicos y/o informáticos utilizados por el Usuario y que se deriven de fallas o configuraciones incorrectas en nuestra plataforma, por virus, malware, ransomware o cualquier otro tipo de tecnología superviniente que llegaré a afectar el equipo del Usuario como consecuencia del uso del sitio o por la descarga de datos, archivos, imágenes y/o contenidos audiovisuales. El Usuario exime de cualquier responsabilidad a DreamSchool y renuncia a exigir el pago por perjuicios resultantes de dificultades técnicas o fallas en LA PLATAFORMA.</p>
+
+      <h5 class="text-center">CLÁUSULA H. PROPIEDAD INTELECTUAL</h5>
+      <p class="text-justify">El contenido que se provee en LA PLATAFORMA como imágenes, iconos, diseños, dibujos, fotografías, audios, vídeos, animaciones multimedia, material didáctico, textos, manuales, el código fuente y código objeto del sitio web y de la aplicación móvil están protegidas por las legislaciones nacionales e internacionales en materia de propiedad intelectual (propiedad industrial y/o derechos de autor). DreamSchool, S.A.P.I. de C.V. es titular de todos los derechos de propiedad industrial y/o derechos de autor relativos al diseño, funciones y/u operaciones que integran LA PLATAFORMA y sus subdominios, por lo que el servicio otorgada al Usuario no constituye una licencia para utilizar el nombre, contenido, diseños, signos distintivos, marcas y/o cualquier otro contenido. Para efecto de determinar usos autorizados, así como restricciones, definimos a continuación lo siguiente:</p>
+      <p class="text-justify font-italic">a. Marcas</p>
+      <p class="text-justify">DreamSchool es signo distintivo reconocido por el Instituto Mexicano de la Propiedad Industrial a favor de DreamSchool, S.A.P.I. de C.V., el uso de LA PLATAFORMA y campañas publicitarias es de uso exclusivo de DreamSchool ,su inclusión en LOS SERVICIOS no otorga uso o cesión de derechos a favor de los Usuarios.</p>
+      <p class="text-justify font-italic">b. Derechos De Autor</p>
+      <p class="text-justify">Los contenidos en formato de textos, imágenes, audios, contenidos audiovisuales, código fuente y/o código objeto tienen derechos reservados a favor de DreamSchool, S.A.P.I. de C.V., esto faculta a establecer limitaciones al uso de estos, los cuales consisten en lo siguiente:</p>
+      <ul>
+        <li><p class="text-justify">Usos permitidos:</p></li>
+        <ul><li><p class="text-justify">Reproducción parcial para fines de estudio no lucrativos</p></li></ul>
+        <ul><li><p class="text-justify">Compartir parcialmente vía redes sociales u otros medios electrónicos sólo con fines de recomendar el sitio</p></li></ul>
+
+        <li><p class="text-justify">Usos no permitidos</p></li>
+        <ul><li><p class="text-justify">Adjudicación de autoría</p></li></ul>
+        <ul><li><p class="text-justify">Inserción o reproducción de textos parciales o completos en otros sitios web (fijación digital)</p></li></ul>
+        <ul><li><p class="text-justify">Traducción</p></li></ul>
+        <ul><li><p class="text-justify">Adaptación</p></li></ul>
+        <ul><li><p class="text-justify">Generación de Obras derivadas sin autorización del titular</p></li></ul>
+      </ul>
+      <p class="text-justify">El uso de material protegido por la legislación en materia de derechos de autor en las publicaciones que realice el Usuario quedará sujeto al proceso de Aviso y Contra Aviso al cual estamos obligados en apego a las disposiciones establecidas en la Ley Federal del Derecho de Autor. Si un Usuario o alguien externo tiene conocimiento de violaciones en materia de derechos de autor deberá hacerlo de conocimiento de DreamSchool vía correo electrónico al email team@dreamSchool.com</p>
+      <p class="text-justify">Si DreamSchool identifica que el Usuario está publicando links para realizar la descarga directa de obras protegidas por la Ley Federal del Derecho de Autor, dichos links serán eliminados y el perfil del Usuario será suspendido por 30 días sin responsabilidad alguna para DreamSchool ante cualquier reclamación por la falta de prestación del servicio.</p>
+
+      <h5 class="text-center">CLÁUSULA I. PRIVACIDAD</h5>
+      <p class="text-justify font-italic">a. Respecto a datos personales sujetos a tratamiento por DreamSchool</p>
+      <p class="text-justify">En cumplimiento con lo establecido por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su regulación secundaria, hacemos de su conocimiento que DreamSchool realiza el tratamiento de sus datos personales bajo estándares estrictos en cumplimiento a los principios de protección de datos personales, derechos y obligaciones establecidos en la ley señalada. La contratación y prestación de nuestros servicios se rige por el Aviso de Privacidad Integral que está a su disposición en el apartado de Privacidad de LA PLATAFORMA.</p>
+      <p class="text-justify font-italic">b. Respecto a su información financiera</p>
+      <p class="text-justify">DreamSchool utiliza sistemas de procesamiento de pago proporcionados por terceros, es importante que realice la consulta de su Aviso de Privacidad en:</p>
+      <ul>
+        <li><p class="text-justify">PayPal - <a href="https://www.paypal.com/mx/webapps/mpp/ua/privacy-full">https://www.paypal.com/mx/webapps/mpp/ua/privacy-full</a></p></li>
+        <li><p class="text-justify">Banorte - <a href="https://www.banorte.com/wps/portal/gfb/Home/banorte-te-informa/aviso-de-privacidad/">https://www.banorte.com/wps/portal/gfb/Home/banorte-te-informa/aviso-de-privacidad/</a></p></li>
+        <li><p class="text-justify">Oxxo Pay - Conekta - <a href="https://conekta.com/legal/privacy">https://conekta.com/legal/privacy</a></p></li>
+      </ul>
+
+      <h5 class="text-center">CLÁUSULA J. MODIFICACIONES Y/O ACTUALIZACIONES</h5>
+      <p class="text-justify">Estos Términos y Condiciones están sujetos a cambios derivados de modificaciones y/o actualizaciones de la legislación mexicana o bien por cambio a manera de operar de DreamSchool, cuando sucedan cambios en el contenido de esta sección le daremos aviso vía correo electrónico. Adicional a lo anterior, le recomendamos que consulte constantemente esta sección en LA PLATAFORMA, así como la sección de Usuario para conocer los cambios que se realicen en la forma en que operamos, ya que, la aceptación de las modificaciones es condicionante para continuar con el uso de los servicios proveídos en este sitio.</p>
+
+      <h4 class="text-center">ATENTAMENTE, <span>DREAMSCHOOL</span></h4>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot text-center text-white m-0">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Form -->
+        <div class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Registrate para hacer recibir novedades</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Suscribirse
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </div>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <div class="mb-4">
+          <p>
+            DreamSchool es una alternativa para las comunes formas de enseñanza,
+            concentrate en lo que siempre has querido aprender, sin materias de
+            relleno, sin rodeos, aprende practicando y estaras preparado para el
+            mundo laboral.
+          </p>
+        </div>
+        <!-- Section: Text -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="#">DreamSchool.com</a> |
+        <a class="text-white" href="terminos.html">Terminos y condiciones</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+  </body>
+</html>
